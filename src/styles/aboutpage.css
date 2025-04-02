@@ -1,0 +1,64 @@
+.about-container {
+    text-align: center;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-container h2 {
+    color: #0056b3;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.tips-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tip {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tip:hover {
+    transform: scale(1.05);
+}
+
+.tip h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.tip-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.tip p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tips-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tip {
+        width: 90%;
+    }
+}

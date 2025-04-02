@@ -1,0 +1,98 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background Container */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #141e30, #243b55);
+  padding: 20px;
+}
+
+/* Form Box */
+.form-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Heading */
+.heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Labels */
+.form-box label {
+  display: block;
+  font-size: 1rem;
+  color: #ddd;
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+/* Inputs & Textarea */
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-box input::placeholder,
+.form-box textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-box input:focus,
+.form-box textarea:focus {
+  border: 2px solid #ff416c;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Button */
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-box button:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  transform: scale(1.05);
+}
+
+/* Disabled Button */
+.form-box button:disabled {
+  background: gray;
+  cursor: not-allowed;
+  transform: none;
+}
